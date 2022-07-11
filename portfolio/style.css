@@ -1,0 +1,694 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+#loader{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: #21242d url('loader.gif') no-repeat center;
+	z-index: 999;
+}
+
+/* navbar styling */
+
+.navbar{
+    background-color: #fff6c4;
+}
+
+.navbar .navbar-nav li{
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+.navbar .navbar-nav li a{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+#home{
+    color: #6cb1ff;
+}
+
+#home:hover {
+    color: #1c5eaa;
+}
+
+#projects{
+    color: #6cb1ff;
+}
+
+#projects:hover {
+    color: #1c5eaa;
+}
+
+#experience{
+    color: #6cb1ff;
+}
+
+#experience:hover {
+    color: #1c5eaa;
+}
+
+#education{
+    color: #6cb1ff;
+}
+
+#education:hover {
+    color: #1c5eaa;
+}
+
+#achievements{
+    color: #6cb1ff;
+}
+
+#achievements:hover {
+    color: #1c5eaa;
+}
+  
+  .nav-link::before {
+    transition: 300ms;
+    height: 5px;
+    content: "";
+    position: absolute;
+    background-color: #1c5eaa;
+  }
+  
+  .nav-link-ltr::before {
+    width: 0%;
+    bottom: 10px;
+  }
+  
+  .nav-link-ltr:hover::before {
+    width: 7%;
+  }
+
+/* navbar styling end */
+
+/* header styling */
+
+#header_about{
+    margin-top: 5rem;
+}
+
+#header_about h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: #1c5eaa;
+}
+
+#header_about h5{
+    color: #ff71a8;
+}
+
+#header_about p{
+    margin-top: 2rem;
+    margin-right: 3rem;
+}
+
+#header{
+    background-image: linear-gradient(to bottom, #fff6c4 ,#ff8ab7 );
+}
+
+#header_pic lottie-player{
+    height: 460px;
+    width: 460px;
+}
+
+#buttons{
+    display: flex;
+    justify-content: center;
+}
+
+#buttons .btn{
+    width: 12rem;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 2.5rem;
+    background-color: #64acff;
+    transition-duration: 200ms;
+    transition-property: background-color,box-shadow;
+    border: none;
+}
+
+#buttons .btn:hover{
+    background-color: #ff71a8;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+#d_cv{
+    margin-right: 1rem;
+}
+
+#c_chat{
+    margin-left: 1rem;
+}
+
+@media(max-width:768px){
+    #header_pic lottie-player{
+        height: 300px;
+        width: 300px;
+    }
+
+    /* #header_about p{
+        text-align: center;
+    } */
+
+    #d_cv{
+        margin: auto;
+    }
+
+    #c_chat{
+        margin: auto;
+    }
+}
+
+/* header styling ends */
+
+
+/* skills styling */
+
+#skill h1{
+    font-family: 'Roboto Slab', serif;
+    color:#ff71a8;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1.4rem;
+    font-size: 2.1rem;
+    font-weight: 520;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+#skill h2{
+    font-family: 'Dancing Script', cursive;
+    color: #1c5eaa;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+#skill p{
+    font-size: 1.1rem;
+}
+
+.progress-bar{
+    background-color: #6cb1ff;
+}
+
+#skill button{
+    cursor:auto;
+    font-size: 1.1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+    /* background-color: #fff6c4; */
+    background-image: linear-gradient(to bottom, #fff6c4 ,#ff8ab7 );
+    border-radius: 0%;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    border: none;
+    /* box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); */
+}
+
+#skill span{
+    font-size: 1.1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    line-height: 2.8rem;
+
+}
+
+#skill{
+    margin-bottom: 7rem;
+}
+
+#skill_btn button{
+    color: #464646;
+}
+
+/* skills styling end */
+
+
+/* get in touch styling */
+
+#getTouch{
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+}
+
+#meImg{
+    display: flex;
+    justify-content: center;
+}
+
+#meImg img{
+    border-radius: 20%;
+    box-shadow: -10px 10px #64acff;
+    margin-bottom: 2rem;
+}
+
+#getTouch h1{
+    color: #ff71a8;
+    font-size: 2rem;
+    font-weight: 520;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+    margin-bottom: 1.5rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+#getTouch form label{
+    color: #1c5eaa;
+    font-weight: 500;
+}
+
+#inputMsg{
+    padding-top: 1rem;
+    padding-bottom: 8rem;
+}
+
+#contact_form input{
+    background-color: #fff6c4;
+    border-color: #1c5eaa;
+    border-radius: 10px
+}
+
+#getTouch button{
+    border: none;
+    transition-property: background-color,box-shadow;
+    transition-duration: 200ms;
+    font-family: 'Roboto Slab', serif;
+}
+
+.form_btn{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#getTouch button{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 1.1rem;
+}
+
+#getTouch button:hover{
+    background-color: #ff71a8;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+input .form-control{
+    color: #fff6c4;
+}
+
+#social{
+    display: flex;
+    justify-content: center;
+}
+
+#social a{
+    align-items: center;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+#social a:hover{
+    background-color: #64acff;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+.fa-envelope{
+    font-size: 15px;
+    background-color: #ff71a8;
+    color: #fff;
+    border-radius: 50%;
+    padding: 8px;
+    /* padding-top: 7px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px */
+}
+
+.fa-linkedin{
+    font-size: 15px;
+    background-color: #ff71a8;
+    color: #fff;
+    border-radius: 50%;
+    padding-top: 6px;
+    padding-bottom: 3px;
+    padding-left: 9px;
+    padding-right: 9px
+}
+
+.fa-github{
+    font-size: 15px;
+    background-color: #ff71a8;
+    color: #fff;
+    border-radius: 50%;
+    padding-top: 7px;
+    padding-bottom: 2px;
+    padding-left: 9.5px;
+    padding-right: 9.5px
+}
+
+.fa-instagram{
+    font-size: 15px;
+    background-color: #ff71a8;
+    color: #fff;
+    border-radius: 50%;
+    padding-top: 7px;
+    padding-bottom: 2px;
+    padding-left: 9.5px;
+    padding-right: 9.5px
+}
+
+.fa-facebook{
+    font-size: 15px;
+    background-color: #ff71a8;
+    color: #fff;
+    border-radius: 50%;
+    padding-top: 8px;
+    padding-bottom: 1px;
+    padding-left: 12px;
+    padding-right: 12px
+}
+
+.fa-twitter{
+    font-size: 15px;
+    background-color: #ff71a8;
+    color: #fff;
+    border-radius: 50%;
+    padding-top: 8px;
+    padding-bottom: 1px;
+    padding-left: 9px;
+    padding-right: 9px
+}
+
+.fa-location-arrow{
+    font-size: 15px;
+    background-color: #ff71a8;
+    color: #fff;
+    border-radius: 50%;
+    padding-top: 8px;
+    padding-bottom: 1px;
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+@media(max-width:768px){
+    #skill_btn button{
+        font-size: 0.5rem;
+    }
+
+    #meImg img{
+        width: 240px;
+        height: 320px;
+        margin: auto;
+        margin-bottom: 3rem;
+    }
+    #getTouch button{
+        margin-bottom: 1rem;
+    }
+    #social a{
+        font-size: 20px;
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+    }
+}
+
+/* get in touch styling end */
+
+
+/* footer styling */
+
+#footer{
+    background-color: #ff71a8;
+    line-height: 3rem;
+    display: flex;
+}
+
+#footer p{
+    align-items: flex-end;
+    font-size: 1rem;
+    color: #1c5eaa;
+    font-weight: 500;
+    font-family: 'Roboto Slab', serif;
+}
+
+/* footer styling end */
+
+/* projects styling */
+
+#project{
+    background-image: linear-gradient(to bottom, #fff6c4 ,#ff8ab7 );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.card{
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    transition-property: background-color,box-shadow;
+    transition-duration: 500ms;
+    
+}
+
+#project .card{
+    width: 21rem; 
+    margin-bottom: 1.6rem;
+}
+
+#project .card img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card:hover{
+    /* background-color: #ff8ab7; */
+    box-shadow: 5px 5px 28px rgba(0, 0, 0, 0.7);
+}
+
+.card-title{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    color: #1c5eaa;
+}
+
+#personals h3{
+    text-align: center;
+    /* font-family: 'Roboto Slab', serif; */
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.4rem;
+    color: #1c5eaa;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.card_btns{
+    display: flex;
+    justify-content: space-between;
+}
+
+#hackathons h3{
+    text-align: center;
+    /* font-family: 'Roboto Slab', serif; */
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.4rem;
+    color: #1c5eaa;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+#openSources h3{
+    text-align: center;
+    /* font-family: 'Roboto Slab', serif; */
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.4rem;
+    color: #1c5eaa;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+@media(max-width:768px){
+    /* .project_card{
+        margin-bottom: 2rem;
+    } */
+
+    .project_card p .card-text{
+        font-size: 1rem;
+    }
+
+    #project .card{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    .card{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+}
+
+/* project styling end */
+
+
+/* experience page styling */
+#exp{
+    background-image: linear-gradient(to bottom, #fff6c4 ,#ff8ab7 );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#exp_body h3{
+    text-align: center;
+    /* font-family: 'Roboto Slab', serif; */
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.4rem;
+    color: #1c5eaa;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.card-header h5{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    color: #1c5eaa;
+}
+
+#exp_body .card{
+    margin-bottom: 2rem;
+}
+
+#exp_body .card .col-md-3{
+    display: flex;
+    justify-content: center;
+}
+
+#exp_body .card img{
+    border: dashed;
+    border-width: 1.5px;
+    border-color: #383838;
+    border-radius: 10%;
+}
+
+
+/* education page styling */
+
+#edu{
+    background-image: linear-gradient(to bottom, #fff6c4 ,#ff8ab7 );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#edu h3{
+    text-align: center;
+    /* font-family: 'Roboto Slab', serif; */
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.4rem;
+    color: #1c5eaa;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+#edu .card{
+    margin-bottom: 2rem;
+}
+
+#ed_certificates .col-md-4{
+    display: flex;
+    justify-content: center;
+}
+
+#edu .card-footer{
+    display: flex;
+    justify-content: center;
+}
+
+#edu .card-footer a{
+    text-align: center;
+    text-decoration: none;
+}
+
+#edu .card .col-md-3{
+    display: flex;
+    justify-content: center;
+}
+
+#edu .card img{
+    border: dashed;
+    border-width: 1.5px;
+    border-color: #383838;
+    border-radius: 10%;
+    padding: 3px;
+}
+
+
+/* achievement page styling */
+
+#achieve h3{
+    text-align: center;
+    /* font-family: 'Roboto Slab', serif; */
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.6rem;
+    color: #ff71a8;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#achieve h4{
+    font-family: 'Roboto Slab', serif;
+    color: #1c5eaa;
+    margin-bottom: 1.2rem;
+}
+
+#achieve p span{
+    color: #ff71a8;
+    font-size: 1.2rem;
+}
+
+#achieve p{
+    font-size: 1.2rem;
+}
+
+#achieve_img lottie-player{
+    width: 300px;
+    height: 300px;
+}
+
+@media(max-width:768px){
+    #achieve_img{
+        display: flex;
+        justify-content: center;
+    }
+
+    #achieve_img lottie-player{
+        width: 240px;
+        height: 240px;
+    }
+
+    #achieve p{
+        font-size: 1rem;
+    }
+
+    #achieve h4{
+        font-size: 1.4rem;
+    }
+}
+
+/* unavailable styling */
+.unavailable{
+    text-align: center;
+}
